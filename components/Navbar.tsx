@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
-import { RiMoonFill, RiSunLine } from 'react-icons/ri'
+import { RiMoonLine, RiSunLine } from 'react-icons/ri'
 import { IoMenu, IoClose } from 'react-icons/io5'
 
 interface NavItem {
@@ -44,6 +44,18 @@ const Navbar = () => {
                             return <a key={idx}>{item.label}</a>
                         })
                     }
+                    {
+                        currentTheme === "dark" ? (
+                            <button>
+                                <RiSunLine />
+                            </button>
+                        ) : (
+                            <button>
+                                <RiMoonLine />
+                            </button>
+                        )
+                    }
+
                 </div>
             </div>
         </header>
