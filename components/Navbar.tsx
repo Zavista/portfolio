@@ -35,11 +35,11 @@ const Navbar = () => {
           }`}>
             <div className='md:flex md:items-center justify-between'>
                 <div>
-                    <div className='md:py-5 md:block'>
+                    <div className='md:py-5 md:block cursor-pointer'>
                         <h2 className='text-2xl font-bold'>David Zhao</h2>
                     </div>
                 </div>
-                <div className='md:flex items-center justify-center md:space-x-6'>
+                <div className='md:flex items-center justify-center md:space-x-6 cursor-pointer'>
                     {
                         NavItems.map((item, idx) => {
                             return <a key={idx}>{item.label}</a>
