@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Link from 'next/link'
+import {Link } from 'react-scroll'
 import { useTheme } from 'next-themes'
 import { RiMoonLine, RiSunLine } from 'react-icons/ri'
 import { IoMenu, IoClose } from 'react-icons/io5'
@@ -49,16 +49,30 @@ const Navbar = () => {
                 <div className={`md:flex items-center justify-center md:space-x-6 cursor-pointer ${isMobileNav ? "block" : "hidden"}`}>
                     {
                         NavItems.map((item, idx) => {
-                            return <a key={idx}>{item.label}</a>
+                            return  <Link
+                                        key={idx}
+                                        to={item.page}
+                                        className={
+                                        `block lg:inline-block text-neutral-900 hover:text-neutral-500 ${theme === 'dark' && "text-neutral-100"} ${isMobileNav && 'mb-5'}`
+                                        }
+                                        activeClass="active"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-100}
+                                        duration={500}
+                                        onClick={() => setMobileNav(!isMobileNav)}
+                                    >
+                                        {item.label}
+                                    </Link>
                         })
                     }
                     {
                         theme === "dark" ? (
-                            <button onClick={() => setTheme("light")} className='bg-slate-100 p-2 rounded-xl'>
+                            <button onClick={() => setTheme("light")} className={`bg-slate-100 p-2 rounded-xl ${isMobileNav && 'mb-3'}`}>
                                 <RiSunLine size={25} color='black'/>
                             </button>
                         ) : (
-                            <button onClick={() => setTheme("dark")} className='bg-slate-100 p-2 rounded-xl'>
+                            <button onClick={() => setTheme("dark")} className={`bg-slate-100 p-2 rounded-xl ${isMobileNav && 'mb-3'}`}>
                                 <RiMoonLine size={25}/>
                             </button>
                         )
