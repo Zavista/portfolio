@@ -53,7 +53,7 @@ const Navbar = () => {
                                         key={idx}
                                         to={item.page}
                                         className={
-                                        `block lg:inline-block text-neutral-900 hover:text-neutral-500 ${theme === 'dark' && "text-neutral-100"} ${isMobileNav && 'mb-5'}`
+                                        `block lg:inline-block text-neutral-900 hover:text-neutral-500 ${theme === 'dark' && "text-neutral-100"} md:mb-0 mb-3`
                                         }
                                         activeClass="active"
                                         spy={true}
@@ -68,11 +68,11 @@ const Navbar = () => {
                     }
                     {
                         theme === "dark" ? (
-                            <button onClick={() => setTheme("light")} className={`bg-slate-100 p-2 rounded-xl ${isMobileNav && 'mb-3'}`}>
+                            <button onClick={() => setTheme("light")} className={`bg-slate-100 p-2 rounded-xl md:mb-0 mb-3`}>
                                 <RiSunLine size={25} color='black'/>
                             </button>
                         ) : (
-                            <button onClick={() => setTheme("dark")} className={`bg-slate-100 p-2 rounded-xl ${isMobileNav && 'mb-3'}`}>
+                            <button onClick={() => setTheme("dark")} className={`bg-slate-100 p-2 rounded-xl md:mb-0 mb-3`}>
                                 <RiMoonLine size={25}/>
                             </button>
                         )
