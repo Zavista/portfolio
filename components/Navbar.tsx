@@ -26,10 +26,24 @@ const NavItems: Array<NavItem> = [
   
 
 const Navbar = () => {
-  return (
-    <div>
-    </div>
-  )
+    const {systemTheme, theme, setTheme } = useTheme();
+    const currentTheme = theme === "system" ? systemTheme : theme;
+    const [isMobileView, setMobileView] = useState(false);
+
+    return (
+        <header>
+            <div>
+                <div>
+                    <div>
+                        <h2>David Zhao</h2>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </header>
+    )
 }
 
 export default Navbar
