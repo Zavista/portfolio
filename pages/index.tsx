@@ -3,7 +3,7 @@ import { ThemeProvider } from "next-themes";
 
 export default function Home() {
   return (
-    <ThemeProvider defaultTheme="light" attribute="class" enableSystem>
+    <ThemeProvider defaultTheme="light">
       <Navbar></Navbar>
     </ThemeProvider>
       
