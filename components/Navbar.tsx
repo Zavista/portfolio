@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
-import { RiMoonFill, RiSunLine } from 'react-icons/ri'
+import { RiMoonLine, RiSunLine } from 'react-icons/ri'
 import { IoMenu, IoClose } from 'react-icons/io5'
 
 interface NavItem {
@@ -48,11 +48,11 @@ const Navbar = () => {
                     {
                         theme === "dark" ? (
                             <button onClick={() => setTheme("light")} className='bg-slate-100 p-2 rounded-xl'>
-                                <RiSunLine />
+                                <RiSunLine size={25} color='black'/>
                             </button>
                         ) : (
                             <button onClick={() => setTheme("dark")} className='bg-slate-100 p-2 rounded-xl'>
-                                <RiMoonFill />
+                                <RiMoonLine size={25}/>
                             </button>
                         )
                     }
