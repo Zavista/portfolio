@@ -23,7 +23,7 @@ const HomeSection = () => {
                 <span className="font-semibold text-teal-600">
                   Computer Science {" "}
                 </span>
-                student studying at the University of Waterloo. I am interested in .....
+                co-op student studying at the University of Waterloo. I am interested in software and web development.
               </p>
               <Link
                 to="about"
