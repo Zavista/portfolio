@@ -40,7 +40,7 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-            I believe that you should never stop growing and that's what I strive to do. I am always looking for chances to learn and grow at software and web development, pushing myself to see what I can achieve.
+            I believe that you should never stop growing and that is what I strive to do. I am always looking for chances to learn and grow at software and web development, pushing myself to see what I can achieve.
         
             </p>
             
