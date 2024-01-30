@@ -22,6 +22,10 @@ const NavItems: Array<NavItem> = [
       label: "Projects",
       page: "projects",
     },
+    {
+        label: "Contact Me",
+        page: "footer",
+      },
 ];
   
 
