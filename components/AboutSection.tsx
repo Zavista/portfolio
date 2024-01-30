@@ -2,7 +2,17 @@ import React from "react"
 import Image from "next/image"
 
 const skills = [
-  { skill: "HTML", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"},
+  { skill: "HTML", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"},
+  { skill: "CSS", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"},
+  { skill: "JavaScript", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"},
+  { skill: "TypeScript", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+  { skill: "Python", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" },
+  { skill: "Java", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"},
+  { skill: "React", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"},
+  { skill: "Node", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"},
+  { skill: "MongoDB", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"},
+  { skill: "Git", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg"},
+
 
 ]
 
@@ -57,9 +67,8 @@ const AboutSection = () => {
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
               {skills.map((item, idx) => {
                 return (
-                    <div key={idx} className="flex flex-col items-center justify-center">                    
-                        <Image src={item.image} alt='skill icon' width={50} height={50}></Image>
-                        <p className="mt-1 text-xs">{item.skill}</p>
+                    <div key={idx} className="flex flex-col items-center justify-center mb-4 mr-4 w-100 h-100">                    
+                        <Image src={item.image} alt={item.skill} width={70} height={70}></Image>
                     </div>
 
                 )
