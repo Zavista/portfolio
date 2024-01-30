@@ -57,7 +57,7 @@ const Navbar = () => {
                                         key={idx}
                                         to={item.page}
                                         className={
-                                        `block lg:inline-block text-neutral-900 hover:text-neutral-500 ${theme === 'dark' && "text-neutral-100"} md:mb-0 mb-3`
+                                        `block lg:inline-block text hover:text-neutral-500 ${theme === 'dark' ? "text-neutral-100" : "text-neutral-900"} md:mb-0 mb-3`
                                         }
                                         activeClass="active"
                                         spy={true}
