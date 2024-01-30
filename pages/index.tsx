@@ -3,6 +3,7 @@ import HomeSection from "../components/HomeSection";
 import { ThemeProvider } from "next-themes";
 import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection";
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         <AboutSection></AboutSection>
         <ProjectsSection></ProjectsSection>
       </main>
-
+      <Footer></Footer>
     </ThemeProvider>
       
   );
