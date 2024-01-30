@@ -25,17 +25,26 @@ const HomeSection = () => {
                 </span>
                 co-op student studying at the University of Waterloo. I am interested in software and web development.
               </p>
-              <Link
-                to="about"
-                className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-              >
-                About Me
-              </Link>
+              <div className="flex">
+                <Link
+                  to="about"
+                  className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700 mr-2"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                >
+                  About Me
+                </Link>
+               
+                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" 
+                className="text-teal-600 font-semibold px-6 py-3 bg-neutral rounded border border-teal-600 shadow hover:bg-neutral-100 box-border">
+                  Resume
+                </a>
+
+              </div>
+
             </div>
           </div>
           <div className="flex items-center text-center justify-center ">
