@@ -42,7 +42,7 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-            I have experience coding in Javascript, TypeScript, Python, Java, and C. I am always eager to I am always looking for chances to learn and grow at software and web development, staying at the forefront of new exicting technologies.
+            I have experience coding in Javascript, TypeScript, Python, Java, and C. I am always eager to learn and grow at software and web development, staying at the forefront of new exicting technologies.
         
             </p>
             
