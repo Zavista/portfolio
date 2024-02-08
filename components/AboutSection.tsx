@@ -8,7 +8,9 @@ const skills = [
   { skill: "TypeScript", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
   { skill: "Python", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
   { skill: "Java", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"},
+  { skill: "C", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"},
   { skill: "React", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"},
+  { skill: "Next.js", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg"},
   { skill: "Node", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"},
   { skill: "MongoDB", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"},
   { skill: "MySQL", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"},
@@ -36,11 +38,11 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-            I am passionate about researching problems and solving them through design while providing a seemless user experience. My experience involves crafting full-stack applications using React and Node as well as database management with MongoDB and MySQL.
+            I am passionate about researching problems and solving them through an analytical mindset. My experience involves crafting full-stack applications using React and Node as well as database management with MongoDB and MySQL.
             </p>
             <br />
             <p>
-            I believe that you should never stop growing and that is what I strive to do. I am always looking for chances to learn and grow at software and web development, pushing myself to see what I can achieve.
+            I have experience coding in Javascript, TypeScript, Python, Java, and C. I am always eager to I am always looking for chances to learn and grow at software and web development, staying at the forefront of new exicting technologies.
         
             </p>
             
