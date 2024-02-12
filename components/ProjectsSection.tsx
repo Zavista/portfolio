@@ -1,31 +1,31 @@
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
+import { BsGithub, BsArrowUpRightSquare, BsYoutube } from "react-icons/bs"
 
 const projects = [
   {
-    name: "Fakebook",
+    name: "Socialize",
     description:
-      "Fakebook is a social media platform allowing users to create posts, view content, and manage their social connections.",
-    image: "/fakebook.png",
+      "Socialize is a social media platform allowing users to create posts, view content, and manage their social connections.",
+    image: "/socialize.png",
     github: "https://github.com/Zavista/social-media-app",
-    link: "",
+    link: "https://youtu.be/T2ZsQprd5a8",
   },
   {
-    name: "CRUD App",
-    description: "CRUD App is an employee data management web app with CRUD operations.",
-    image: "/crudapp.png",
-    github: "https://github.com/Zavista/user-management",
-    link: "",
-  },
-  {
-    name: "Brewtiful",
+    name: "Tech Store",
     description:
-      "Brewtiful is a coffee e-commerce store with a visually appealing online shopping experience.",
-    image: "/brewtiful.png",
-    github: "https://github.com/Zavista/ecommerce-app-design",
-    link: "",
+      "Tech Store is an electronics e-commerce store with a visually appealing online shopping experience where users can seamlessly browse and purchase a wide range of electronics",
+    image: "/techstore.png",
+    github: "https://github.com/Zavista/full-stack-ecommerce",
+    link: "https://youtu.be/00sVWyIE5p8",
+  },
+  {
+    name: "My Users",
+    description: "My Users is a simple user data management web app with CRUD operations.",
+    image: "/myusers.png",
+    github: "https://github.com/Zavista/sql-crud",
+    link: "https://youtu.be/Wl8oBpGHGfg",
   },
 ]
 
@@ -62,6 +62,13 @@ const ProjectsSection = () => {
                           size={30}
                           className="hover:-translate-y-1 transition-transform cursor-pointer"
                         />
+                      </Link>
+                      <Link href={project.link} target="_blank">
+                        <BsYoutube 
+                        size={30}
+                        className="hover:-translate-y-1 transition-transform cursor-pointer"
+                        >
+                        </BsYoutube>
                       </Link>
                     </div>
                   </div>
